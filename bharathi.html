@@ -93,14 +93,15 @@
       color: #228B22	;
   }
   .image{
-     width:1500px; /*width of your image*/
-      height:800px; /*height of your image*/
-     background-image:url('plant.jpg');
-      /* object-fit: contain; */
-     background-size: cover;
-   /* background-position: 70% 20%; */
-     /* margin:0; /* If you want no margin */ */
-     /* padding:0; /*if your want to padding */
+    opacity: 0.8;
+    width: 100%; /*width of your image*/
+    height: 700px; /*height of your image*/
+    background-image:url('nat2.jpg');
+    object-fit: contain;
+    background-size: cover;
+    background-position: 50% 50%; */
+    margin:0; /* If you want no margin */
+    padding:0; /*if your want to padding */
    }
   .panel-heading {
       color: #fff !important;
@@ -149,7 +150,7 @@
       border-color: transparent;
       color: #fff !important;
   }
-  li {
+  /* li {
     display: block;
     font-size: 19px;
     color: #303030;
@@ -157,14 +158,14 @@
 
   li:before {
     /*Using a Bootstrap glyphicon as the bullet point*/
-    content: "\e081";
+    /* content: "\e081";
     font-family: 'Glyphicons Halflings';
     font-size: 12px;
     float: left;
     margin-top: 4px;
     margin-left: -17px;
     color: #000000;
-  }
+  } */
   footer .glyphicon {
       font-size: 20px;
       margin-bottom: 20px;
@@ -216,11 +217,32 @@
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-
-<div id="home" class="jumbotron text-center">
-  <h1><strong>Bharathi Estates</strong></h1>
-  <p>Karamadai, Mettupalayam</p>
-  <p>Coimbatore</p>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- <a class="navbar-brand" href="#myPage">Logo</a> -->
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#features">FEATURES</a></li>
+          <li><a href="#plan">PLAN</a></li>
+          <li><a href="#location">LOCATION</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div class="image jumbotron text-center">
+  <br><br>  <br><br>
+  <h1 style="color:white;"><strong>Bharathi Estates</strong></h1>
+  <p style="color:white;">Karamadai, Mettupalayam</p>
+  <p style="color:white;">Coimbatore</p>
   <!-- <form>
     <div class="input-group">
       <input type="email" class="form-control" size="50" placeholder="Email Address" required>
@@ -247,7 +269,7 @@
  </div>
 </div>
 
- <div class="container-fluid">
+ <div id="features" class="container-fluid">
   <div class="row"><div class="col-sm-1 slideanim"></div>
     <div class="col-sm-7">
       <h2>Your Dreamland Features</h2>
@@ -272,7 +294,7 @@
 
 
 <!-- Container (Portfolio Section) -->
-<div id="project" class="container-fluid bg-grey text-center">
+<div id="plan" class="container-fluid bg-grey text-center">
   <h2>PLAN</h2><br>
         <img src="phase1.jpeg" alt="Bharathi Estates" class="slideanim img-responsive"></img> <br><br>
         <img src="phase34.jpeg" alt="Bharathi Estates" class="slideanim img-responsive" ></img>
@@ -280,7 +302,7 @@
 
   <div id="location" class="container-fluid text-center">
     <h2>LOCATION</h2><br>
-          <img src="loc.jpeg" alt="Bharathi Estates" class="slideanim img-responsive"></img>
+        <img src="loc.jpeg" alt="Bharathi Estates" class="slideanim img-responsive center"></img>
     </div>
 
 <!-- Container (Pricing Section) -->
