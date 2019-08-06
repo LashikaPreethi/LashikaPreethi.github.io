@@ -143,6 +143,25 @@
   .navbar li a, .navbar .navbar-brand {
       color: #fff !important;
   }
+  .img-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+  .centered {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .img-container:hover {
+    opacity:0.5;
+    z-index: 100;
+}
+
+.img-container:hover .centered {
+  color: black;
+}
   .navbar-nav li a:hover, .navbar-nav li.active a {
       color: #228B22	 !important;
       background-color: #fff !important;
@@ -279,27 +298,33 @@
   <h4>What we have created</h4>
   <div class="row text-center slideanim">
     <div class="col-sm-4">
-      <div class="thumbnail">
+      <div class="thumbnail img-container">
         <img src="cbe.JPG" alt="Bharathi Estates" style="width:500px;height:300px;" onclick="location.href='bharathi.html'"></img>
-        <p><strong>Bharathi Estates</strong> </p>
-        <p>Karamadai, Mettupalayam</p>
-        <p>Coimbatore</p>
+        <div class="centered">
+          <h3><strong>Bharathi Estates</strong> </h3>
+          <p>Karamadai, Mettupalayam</p>
+          <p>Coimbatore</p>
+        </div>
       </div>
     </div>
     <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="salem.jpg" alt="Bharathi Estate" style="width:500px;height:300px;"></img>
-        <p><strong>Bharathi Estate</strong></p>
-        <p><strong>Manjipalayam, Katheri</strong></p>
-        <p>Salem</p>
+      <div class="thumbnail img-container">
+        <img src="salemm.jpg" alt="Bharathi Estate" style="width:500px;height:300px;"></img>
+        <div class="centered">
+          <h3><strong>Bharathi Estate</strong></h3>
+          <p><strong>Manjipalayam, Katheri</strong></p>
+          <p>Salem</p>
+        </div>
       </div>
     </div>
     <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="erode.jpg" alt="Saralai Nagar" style="width:500px;height:300px;"></img>
-        <p><strong>Saralai Nagar</strong></p>
-        <p><strong>Kambaliyampatti, Perundurai</strong></p>
-        <p>Erode</p>
+      <div class="thumbnail img-container">
+        <img src="Erode.jpeg" alt="Saralai Nagar" style="width:500px;height:300px;"></img>
+          <div class="centered">
+            <h3><strong>Saralai Nagar</strong></h3>
+            <p><strong>Kambaliyampatti, Perundurai</strong></p>
+            <p>Erode</p>
+          </div>
       </div>
     </div>
   </div><br>
