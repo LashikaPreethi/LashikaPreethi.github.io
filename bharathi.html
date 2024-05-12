@@ -127,6 +127,16 @@
       background-color: #228B22	;
       color: #fff;
   }
+  .imagecolumn {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.imagerow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
   .navbar {
       margin-bottom: 0;
       background-color: #228B22	;
@@ -319,7 +329,20 @@
 
   <div id="houses" class="container-fluid text-center">
     <h2>INDEPENDENT RESIDENCES</h2><br>
-        <img src="house1.jpeg" alt="Bharathi Estates" class="slideanim img-responsive center"></img>
+        <div class="imagerow">
+  <div class="imagecolumn">
+    <img src="house1.jpeg" alt="Bharathi Estates" style="width:100%">
+  </div>
+  <div class="imagecolumn">
+    <img src="house2.jpeg" alt="Bharathi Estates" style="width:100%">
+  </div>
+  <div class="imagecolumn">
+    <img src="house3.jpeg" alt="Bharathi Estates" style="width:100%">
+  </div>
+  <div class="imagecolumn">
+    <img src="house4.jpeg" alt="Bharathi Estates" style="width:100%">
+  </div>
+        </div>
     </div>
 
   <div id="location" class="container-fluid text-center">
